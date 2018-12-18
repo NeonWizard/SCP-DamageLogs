@@ -20,7 +20,7 @@ namespace DamageLogs
 	{
 		public override void OnDisable()
 		{
-			this.Info("DaamgeLogs has been disabled.");
+			this.Info("DamageLogs has been disabled.");
 		}
 
 		public override void OnEnable()
