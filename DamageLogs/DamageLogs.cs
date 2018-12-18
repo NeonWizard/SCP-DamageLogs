@@ -32,9 +32,16 @@ namespace DamageLogs
 		{
 			// Register config settings
 			this.AddConfig(new ConfigSetting("dlogs_enable", true, SettingType.BOOL, true, "Whether DamageLogs should be enabled on server start."));
+			// - log damage
+			// - log kills
+			// - log item pickups
+			// - log item drops
+			// - log grenade throws (?)
+			// - log spawn events
 
 			// Register events
 			this.AddEventHandlers(new MiscEventHandler(this), Priority.Highest);
+			this.AddEventHandlers(new LoggableEventsHandler(this), Priority.Highest);
 
 			// Register commands
 		}
