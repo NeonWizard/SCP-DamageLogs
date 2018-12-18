@@ -48,9 +48,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MiscEventHandler.cs" />
+    <Compile Include="Events\LoggableEventsHandler.cs" />
+    <Compile Include="Events\MiscEventHandler.cs" />
     <Compile Include="DamageLogs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
