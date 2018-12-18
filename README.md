@@ -13,7 +13,7 @@ Command | Value Type | Description
 
 ## Configuration
 Config Option | Value Type | Default Value | Description
---- | :---: | :---: | ---
+--: | :---: | :---: | :--
 dlogs_enable | Bool | True | Whether DamageLogs should be enabled on server start.
 
 *Note that all configs should go in your server config file, not config_remoteadmin.txt
