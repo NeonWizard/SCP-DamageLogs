@@ -5,7 +5,7 @@ A plugin for SCP:SL Smod2 servers, which allows advanced damage logs to be recor
 **[Smod2](https://github.com/Grover-c13/Smod2) must be installed for this to work.**
 
 1. Grab the [latest release](https://github.com/NeonWizard/SCP-DamageLogs/releases/latest) of DamageLogs.
-2) Place DamageLogs.dll in your server's `sm_plugins` folder.
+2. Place DamageLogs.dll in your server's `sm_plugins` folder.
 
 ## Commands
 Command | Value Type | Description
