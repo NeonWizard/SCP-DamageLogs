@@ -13,12 +13,13 @@ namespace DamageLogs
 	class MiscEventHandler : IEventHandlerWaitingForPlayers
 	{
 		private readonly DamageLogs plugin;
+		static IConfigFile Config => ConfigManager.Manager.Config;
 
 		public MiscEventHandler(DamageLogs plugin) => this.plugin = plugin;
 
 		public void OnWaitingForPlayers(WaitingForPlayersEvent ev)
 		{
-			if (!ConfigManager.Manager.Config.GetBoolValue("dlogs_enable", true)) this.plugin.pluginManager.DisablePlugin(plugin);
+			if (!Config.GetBoolValue("damagelogs_enable", true)) this.plugin.pluginManager.DisablePlugin(plugin);
 		}
 	}
 }

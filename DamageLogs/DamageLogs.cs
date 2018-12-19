@@ -31,7 +31,7 @@ namespace DamageLogs
 		public override void Register()
 		{
 			// Register config settings
-			this.AddConfig(new ConfigSetting("dlogs_enable", true, SettingType.BOOL, true, "Whether DamageLogs should be enabled on server start."));
+			this.AddConfig(new ConfigSetting("damagelogs_enable", true, SettingType.BOOL, true, "Whether DamageLogs should be enabled on server start."));
 			// - log damage
 			// - log kills
 			// - log item pickups

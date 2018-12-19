@@ -14,7 +14,7 @@ Command | Value Type | Description
 ## Configuration
 Config Option | Value Type | Default Value | Description
 --: | :---: | :---: | :--
-dlogs_enable | Bool | True | Whether DamageLogs should be enabled on server start.
+damagelogs_enable | Bool | True | Whether DamageLogs should be enabled on server start.
 damagelogs_folder_path | String (Path) | %Appdata%\Roaming\SCP Secret Laboratory\ | Where the DamageLogs folder will be located.
 
 *Note that all configs should go in your server config file, not config_remoteadmin.txt
