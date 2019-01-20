@@ -18,6 +18,8 @@ namespace DamageLogs
 	)]
 	public class DamageLogs : Plugin
 	{
+		internal static DamageLogs plugin;
+
 		public override void OnDisable()
 		{
 			this.Info("DamageLogs has been disabled.");

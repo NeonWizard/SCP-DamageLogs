@@ -19,7 +19,7 @@ namespace DamageLogs
 
 		public void OnWaitingForPlayers(WaitingForPlayersEvent ev)
 		{
-			if (!Config.GetBoolValue("damagelogs_enable", true)) this.plugin.pluginManager.DisablePlugin(plugin);
+			if (!this.plugin.GetConfigBool("damagelogs_enable")) this.plugin.pluginManager.DisablePlugin(plugin);
 		}
 	}
 }

@@ -17,7 +17,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>..\..\..\Dev Server\scp_server\sm_plugins\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\Dev Server\scp_server\SCPSL_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
     <Reference Include="Smod2">
       <HintPath>..\..\..\Dev Server\scp_server\SCPSL_Data\Managed\Smod2.dll</HintPath>
     </Reference>
@@ -48,11 +51,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Managers\LogManager.cs" />
     <Compile Include="Events\LoggableEventsHandler.cs" />
     <Compile Include="Events\MiscEventHandler.cs" />
     <Compile Include="DamageLogs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="API\" />
+    <Folder Include="Commands\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
